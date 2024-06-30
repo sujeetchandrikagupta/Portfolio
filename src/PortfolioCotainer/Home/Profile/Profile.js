@@ -22,6 +22,11 @@ const Profile = () => {
               </a>
             </li>
             <li className="navbar-item">
+              <a href="#skill" className="navbar-link">
+                Skills
+              </a>
+            </li>
+            <li className="navbar-item">
               <a href="#contact" className="navbar-link">
                 Contact
               </a>

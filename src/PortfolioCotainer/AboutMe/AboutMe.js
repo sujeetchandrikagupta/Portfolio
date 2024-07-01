@@ -6,7 +6,6 @@ const AboutMe = () => {
     <div className="about-me-container" id="about">
       <div className="about-me-card">
         <h1 className="about-heading">About</h1>
-        {/* <h2 className="about-subheading">Frontend Developer</h2> */}
         <p className="about-paragraph">
           Hello! I'm Sujeet Gupta, a passionate frontend developer with a knack for creating visually appealing and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building responsive and interactive web applications using React.js.
         </p>

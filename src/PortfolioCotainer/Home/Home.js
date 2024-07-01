@@ -4,6 +4,7 @@ import Footer from './Footer/Footer';
 import AboutMe from '../AboutMe/AboutMe';
 import Skill from '../Resume/skill';
 import ContactMe from '../ContactMe/ContactMe';
+import BottomBar from '../BottomBar/BottomBar';
 import './Home.css';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <AboutMe/>
             <Skill/>
             <ContactMe/>
+            <BottomBar/>
         </div>
     );
 }

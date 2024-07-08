@@ -1,21 +1,50 @@
-import React from 'react';
-import './AboutMe.css';
+import React from "react";
+import "./AboutMe.css";
+import profilephoto from "../../assets/Home/profilephoto.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="about-me-container" id="about">
-      <div className="about-me-card">
-        <h1 className="about-heading">About</h1>
-        <p className="about-paragraph">
-          Hello! I'm Sujeet Gupta, a passionate frontend developer with a knack for creating visually appealing and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building responsive and interactive web applications using React.js.
-        </p>
-        <p className="about-paragraph">
-          My journey into web development started with a curiosity for how websites are built and has evolved into a full-fledged career. I enjoy the challenge of transforming complex problems into simple, elegant solutions. I am continuously learning new technologies and best practices to improve my craft.
-        </p>
-        <p className="about-paragraph">
-        In my free time, I enjoy English Conversation videos ,learing new technologies and i do regular exercise to keep my self fit and active. experimenting with new web technologies. I thrive in collaborative environments and am always excited to take on new challenges and projects.
-        </p>
+    <div className="about" id="about">
+
+      <div className="about-title">
+        <h1>About me</h1>
       </div>
+
+      <div className="about-sections">
+        <div className="about-left">
+          <img src={profilephoto} alt="about img 2" />
+        </div>
+
+        <div className="about-right">
+            <p>
+              {" "}
+              Hello, I am Sujeet Gupta. As a frontend developer, I create attractive and user-friendly websites and web applications. I have a strong foundation in HTML, CSS, and JavaScript, and I specialize in building responsive and interactive web applications using React.js.
+            </p>
+            <p>
+              {" "}
+              My web development journey started with a curiosity about how websites are made and turned into a full career. I enjoy solving complex problems with simple, beautiful solutions and am always excited to take on new challenges and projects.
+            </p>
+          
+        </div>
+      </div>
+
+      {/* <div className="about-achievements">
+        <div className="about-achievement">
+          <h1>10+</h1>
+          <p>YEAR OF EXPERIENCE</p>
+        </div>
+        <hr />
+        <div className="about-achievement">
+          <h1>90+</h1>
+          <p>PROJECT COMPLETED</p>
+        </div>
+        <hr />
+        <div className="about-achievement">
+          <h1>15+</h1>
+          <p>HAPPY CLIENTS</p>
+        </div>
+      </div> */}
+
     </div>
   );
 };

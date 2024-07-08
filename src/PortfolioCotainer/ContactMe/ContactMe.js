@@ -67,9 +67,6 @@ const ContactMe = () => {
                 <a href="https://www.facebook.com/profile.php?id=100036627517115&mibextid=ZbWKwL">
                   <i className="fa fa-facebook-square"></i>
                 </a>
-                {/* <a href="#">
-                                <i className='fa fa-google-plus-square'></i>
-                            </a> */}
                 <a href="https://www.instagram.com/mr_sujeet_04_?igsh=MWNvMWR0ejcwOWk3aA==">
                   <i className="fa fa-instagram"></i>
                 </a>

@@ -38,3 +38,51 @@
   transform: scale(1.05);
   transition: 0.3s;
 }
+
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 15px;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .about-skill p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    gap: 20px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .about-skill p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    gap: 25px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .about-skill p {
+    font-size: 18px;
+  }
+
+  .grid-item {
+    padding: 15px;
+  }
+}

@@ -2,13 +2,41 @@ import React from "react";
 import "./ContactMe.css";
 
 const ContactMe = () => {
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "589ea76e-15b5-4aa6-bf9e-974e8ba1fd72");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      alert("Form Submitted Successfully");
+      // setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
+
   return (
     <div className="contact-me-container" id="contact">
           <h1 className="contact-heading">Contact Me</h1>
       
       <div className="contact-me-card">
         <div className="contact-me-left">
-          <form>
+          <form onSubmit={onSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" required />
